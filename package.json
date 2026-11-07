@@ -1,0 +1,19 @@
+{
+  "name": "des-launchpad",
+  "version": "0.2.1",
+  "private": true,
+  "scripts": {
+    "tauri": "tauri",
+    "predev": "node scripts/prepare-defaults.cjs",
+    "dev": "tauri dev",
+    "prebuild": "node scripts/prepare-defaults.cjs && node scripts/check-public-defaults.cjs",
+    "build": "tauri build",
+    "pretest": "node scripts/prepare-defaults.cjs",
+    "test": "cargo test --manifest-path src-tauri/Cargo.toml",
+    "check": "node --check ui/app.js && node --check ui/grouping.js && node --test scripts/grouping.test.cjs scripts/merge-config.test.cjs"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0"
+  },
+  "license": "MIT"
+}

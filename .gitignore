@@ -1,0 +1,13 @@
+node_modules/
+src-tauri/target/
+src-tauri/gen/
+release/
+local/
+*.log
+.env
+.env.*
+!.env.example
+*.lnk
+*.har
+*.dmp
+*.zip
